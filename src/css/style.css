@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -17,15 +17,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Imagens */
 img {
   display: block;
 }
+p {
+  color: #03045e80;
+}
 
-/* === HEADER: MOBILE === */
+.section-divider {
+  margin: 2vw 0;
+}
+/* === header === */
 
 header {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
@@ -116,7 +122,36 @@ main {
   padding-top: var(--header-height);
 }
 
+/* === banner === */
+.banner {
+  background-color: #f7f8fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: normal;
+  padding: 5vw 0;
+}
+.banner h1 {
+  font-size: 1.7rem;
+  color: #03045e;
+  font-weight: bold;
+  margin: 3vw 0 2vw 0;
+}
+.banner p {
+  margin-bottom: 1.5vw;
+  text-align: justify;
+  padding: 2vw 10vw;
+}
+.banner .btn-banner {
+  color: white;
+  background-color: #0098ff;
+  border-radius: 6px;
+  padding: 1.3vw 2.3vw;
+  margin: 4vw 0;
+}
 @media only screen and (min-width: 600px) {
+  /* === header === */
   .header-container {
     margin: 0;
     padding: 16px 2%;
@@ -137,5 +172,32 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 32px;
+  }
+  /* === banner === */
+  .banner {
+    background-color: #f7f8fd;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: normal;
+    padding: 5vw 0;
+    flex-direction: row;
+  }
+  .banner h1 {
+    font-size: 3rem;
+    color: #03045e;
+    font-weight: bold;
+    margin: 3vw 0 2vw 0;
+  }
+  .banner p {
+    margin-bottom: 1.5vw;
+    padding: 0;
+  }
+  .banner .btn-banner {
+    color: white;
+    background-color: #0098ff;
+    border-radius: 6px;
+    padding: 0.7vw 1.7vw;
+    margin: 0;
   }
 }
